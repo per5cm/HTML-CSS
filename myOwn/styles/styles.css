@@ -1,25 +1,25 @@
 .blinkLogo {
-    -moz-animation: blink 2s steps(5, start) infinite;
-    -o-animation: blink 2s steps(5, start) infinite;
-    -webkit-animation: blink 2s steps(5, start) infinite;
-    animation: blink 2s steps(5, start) infinite;
-  }
-  
-  @keyframes blink {
-    to {
-      visibility: hidden;
-    }
-  }
+  -moz-animation: blink 2s steps(5, start) infinite;
+  -o-animation: blink 2s steps(5, start) infinite;
+  -webkit-animation: blink 2s steps(5, start) infinite;
+  animation: blink 2s steps(5, start) infinite;
+}
 
-  @-webkit-keyframes blink {
-    to {
-      visibility: hidden;
-    }
+@keyframes blink {
+  to {
+    visibility: hidden;
   }
+}
 
-  .blink {
-    -moz-animation: blink 1s steps(5, start) infinite;
-    -o-animation: blink 1s steps(5, start) infinite;
-    -webkit-animation: blink 1s steps(5, start) infinite;
-    animation: blink 1s steps(5, start) infinite;
+@-webkit-keyframes blink {
+  to {
+    visibility: hidden;
   }
+}
+
+.blink {
+  -moz-animation: blink 1s steps(5, start) infinite;
+  -o-animation: blink 1s steps(5, start) infinite;
+  -webkit-animation: blink 1s steps(5, start) infinite;
+  animation: blink 1s steps(5, start) infinite;
+}
