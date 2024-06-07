@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-height: 110vh;
+
+}
+
+.w3-image {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.w3-xxlarge {
+  background-color: aliceblue;
+  border-radius: 10px;
+}
+
+.w3-col {
+  margin-top: 100px;
+  margin-bottom: 100px; 
+}
+
