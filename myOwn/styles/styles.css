@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 .blinkLogo {
   -moz-animation: blink 2s steps(5, start) infinite;
   -o-animation: blink 2s steps(5, start) infinite;
@@ -22,4 +27,12 @@
   -o-animation: blink 1s steps(5, start) infinite;
   -webkit-animation: blink 1s steps(5, start) infinite;
   animation: blink 1s steps(5, start) infinite;
+}
+
+.body {
+  background-color: turquoise;
+}
+
+.misceliniuos {
+  background-color: aqua;
 }
