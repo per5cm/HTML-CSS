@@ -1,9 +1,12 @@
 /* this section for basic global stuff text type global margin etc. */
 
-* {
+* { 
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
+
+body { min-height: 100vh; }
 
 /* this section for animation CSS */
 
@@ -39,6 +42,34 @@
   background-color: turquoise;
 }
 
-.misceliniuos {
+.miscellaneous {
   background-color: aqua;
+}
+
+/* this section where usefulSites css starts */
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.cards .card {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px  
+}
+
+/* this section where fun page css starts */
+
+.poopImg {
+  background-color: brown;
+}
+
+.funImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
 }
