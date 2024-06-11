@@ -1,7 +1,11 @@
-*{
+/* this section for basic global stuff text type global margin etc. */
+
+* {
   margin: 0;
   padding: 0;
 }
+
+/* this section for animation CSS */
 
 .blinkLogo {
   -moz-animation: blink 2s steps(5, start) infinite;
@@ -29,7 +33,9 @@
   animation: blink 1s steps(5, start) infinite;
 }
 
-.body {
+/* This is where main CSS file starts */
+
+.bodyTop {
   background-color: turquoise;
 }
 
