@@ -1,6 +1,7 @@
 /* this section for basic global stuff text type global margin etc. */
+/* will update code with time */
 
-* { 
+*{ 
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -40,22 +41,22 @@ body { min-height: 100vh; }
 
 .bodyTop {
   text-align: center;
+  justify-content: space-evenly;
   border: 5px solid;
   border-radius: 10px;
   margin: auto;
   background-color: turquoise;
-  width: 50%;
-  padding: 10px;
-  
-  
+  width: 70%;
+  padding: 20px; 
+  margin-top: 60px;
 }
 
 .btn {
-  display: block;
+  display:inline-flex;
   border: 5px solid;
-  margin-top: 10%;
-  margin-left: 40%;
   padding: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .miscellaneous {
@@ -63,8 +64,9 @@ body { min-height: 100vh; }
   border: 5px solid;
   border-radius: 10px;
   background-color: aqua;
-  height: 50vh;
-  
+  height: 45vh;
+  margin: auto;
+  margin-bottom: 60px;
 }
 
 /* this section where usefulSites css starts */
@@ -74,7 +76,6 @@ body { min-height: 100vh; }
   align-items: center;
   justify-content: space-evenly;
   height: 100vh;
-  
 }
 
 .cards .card {
