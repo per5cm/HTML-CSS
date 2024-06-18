@@ -97,3 +97,12 @@ body { min-height: 100vh; }
   margin-right: auto;
   width: 25%;
 }
+
+/* this section where Projects css starts */
+
+.profilePic {
+  width: 175px;
+  height: 250px;
+  border: 1px solid;
+  border-radius: 200px;
+}
