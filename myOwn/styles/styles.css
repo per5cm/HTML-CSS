@@ -106,3 +106,25 @@ body { min-height: 100vh; }
   border: 1px solid;
   border-radius: 200px;
 }
+
+.projects {
+  text-align: center;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ulP {
+  list-style-type: none;
+}
+
+.introduction {
+  text-align: center;
+  border: 5px solid;
+  border-radius: 10px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
