@@ -103,7 +103,12 @@ body { min-height: 100vh; }
 /* this section where fun page css starts */
 
 .poopImg {
-  background-color: brown;
+  display: block;
+  text-align: center;
+  background-color: rgba(110, 79, 79, 0.783);
+  height: 85vh;
+  width: auto;
+  
 }
 
 .funImg {
@@ -151,4 +156,11 @@ body { min-height: 100vh; }
   margin-left: 10%;
   margin-right: 10%;
   background-color: aquamarine;
+}
+
+/* This is where footer CSS file starts here */
+
+footer {
+  text-align: center;
+  height: 20vh;
 }
