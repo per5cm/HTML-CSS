@@ -39,6 +39,11 @@ body { min-height: 100vh; }
 
 /* This is where main CSS file starts */
 
+h3 {
+  text-align: center;
+  margin-top: 10%;
+}
+
 .topNav {
   border: 5px solid;
   border-radius: 5px;
@@ -63,12 +68,12 @@ body { min-height: 100vh; }
 }
 
 .btn {
-  display:inline-flex;
+  display:flex;
   border: 5px solid;
   box-shadow: 0 0 5px 0;
-  padding: 20px;
-  margin-left: 10%;
-  margin-right: 10%;
+  padding: 15px;
+  
+
 }
 
 .miscellaneous {
