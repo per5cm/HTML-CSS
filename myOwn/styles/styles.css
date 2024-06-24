@@ -72,8 +72,6 @@ h3 {
   border: 5px solid;
   box-shadow: 0 0 5px 0;
   padding: 15px;
-  
-
 }
 
 .miscellaneous {
@@ -84,7 +82,7 @@ h3 {
   box-shadow: 0 0 5px 0;
   margin: auto;
   background-color: rgb(119, 58, 102);
-  width: 40%;
+  width: 30%;
   padding: 50px; 
   margin-top: 60px;
 }
@@ -113,7 +111,6 @@ h3 {
   background-color: rgba(110, 79, 79, 0.783);
   height: 85vh;
   width: auto;
-  
 }
 
 .funImg {
@@ -125,6 +122,21 @@ h3 {
 
 /* this section where Projects css starts */
 
+.name {
+  text-align: center;
+  background-color: whitesmoke;
+  border: 3px solid;
+  border-radius: 10px;
+  margin: auto;
+  width: 45%;
+  padding: 50px; 
+  margin-top: 60px;
+}
+
+.inlineP {
+  display: inline
+}
+
 .profilePic {
   width: 175px;
   height: 250px;
@@ -132,22 +144,18 @@ h3 {
   border-radius: 200px;
 }
 
-.projects {
-  text-align: center;
-  background-color: blueviolet;
-}
-
 .profile {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: aquamarine;
-  
-}
-
-.inlineP {
-  display: inline
-  
+  background-color: rgb(27, 40, 48);
+  border: 1px solid;
+  border-radius: 20px;
+  margin: auto;
+  width: 30%;
+  padding: 50px; 
+  margin-top: 60px;
+  box-shadow: 0 0 5px 0;
 }
 
 .ulP {
@@ -156,12 +164,25 @@ h3 {
 
 .introduction {
   text-align: center;
-  border: 5px solid;
+  border: 1px solid;
   border-radius: 10px;
   margin-left: 10%;
   margin-right: 10%;
-  background-color: aquamarine;
+  background-color: whitesmoke;
+  box-shadow: 0 0 5px 0;
 }
+
+.projects {
+  text-align: left;
+  background-color: rgb(101, 113, 175);
+  border: 5px solid;
+  margin: auto;
+  width: 45%;
+  padding: 45px; 
+  margin-top: 20px;
+}
+
+
 
 /* This is where footer CSS file starts here */
 
