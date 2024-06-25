@@ -170,9 +170,6 @@ img {
 }
 
 .profile {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: whitesmoke;
   border: 1px solid;
   border-radius: 20px;
@@ -184,7 +181,7 @@ img {
 }
 
 .profileButtons {
-  float: left;
+  display: flex;
 }
 
 .introduction {
