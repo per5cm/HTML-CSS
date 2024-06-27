@@ -85,7 +85,7 @@ body { min-height: 100vh; }
 
 .main {
   padding: 16px;
-  margin-top: 30px;
+  margin-top: 60px;
   height: 900px; 
 }
 
@@ -199,6 +199,8 @@ h4 {
 
 /* this section where Portfolio css starts */
 
+/* ## here is the old code for archive ## */
+
 /*.name {
   text-align: center;
   background-color: whitesmoke;
@@ -215,30 +217,40 @@ hr {
   height: 10px;
   border-color: black;
 }
-*/
-
 
 img {
   max-width:100%;
   max-height:100%;
   margin: auto;
 }
+*/
 
 .profilePic {
+  margin-left: 5%;
   width: 175px;
   height: 250px;
-  border-radius: 150px;
+  border-radius: 10px;
+}
+
+.profilePic:hover {
+  content: url(/img/poop\ emoji.png);
+  height: 175px;
+  width: 175px;
+}
+
+.profileButtons {
+  margin-left: 40%;
 }
 
 .profile {
   display: flex;
   align-items: center;
-  justify-content: center;
   background-color: whitesmoke;
   border: 1px solid;
   border-radius: 20px;
   margin: auto;
   width: 45%;
+  height: 40%;
   padding: 50px; 
   margin-top: 10px;
   box-shadow: 0 0 5px 0;
@@ -268,8 +280,6 @@ img {
   padding: 45px; 
   margin-top: 15px;
 }
-
-
 
 /* This is where footer CSS file starts here */
 
