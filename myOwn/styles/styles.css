@@ -7,8 +7,20 @@
        url(/fonts/Noto_Sans/NotoSans-VariableFont_wdth\,wght.ttf);
 }
 
-html, body {
-  font-family: Noto Sans, sans-serif; /*Specify your font name here*/
+@font-face {
+  font-family: Poppins; 
+  src: url(/fonts/Poppins/Poppins-BlackItalic.ttf);
+}
+
+html, .introduction {
+  font-family: Noto Sans, sans-serif; 
+  font-optical-sizing: auto;
+  font-weight: 600;
+}
+
+
+html, .topNav {
+  font-family: Poppins, sans-serif; /*Specify your font name here*/
   font-optical-sizing: auto;
   font-weight: 600;
 }
