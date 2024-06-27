@@ -12,14 +12,14 @@
   src: url(/fonts/Poppins/Poppins-BlackItalic.ttf);
 }
 
-html, .introduction {
+html, footer, .introduction {
   font-family: Noto Sans, sans-serif; 
   font-optical-sizing: auto;
   font-weight: 600;
 }
 
 
-html, .topNav {
+html, .topNav, .btn {
   font-family: Poppins, sans-serif; /*Specify your font name here*/
   font-optical-sizing: auto;
   font-weight: 600;
@@ -173,6 +173,7 @@ h3 {
   text-align: center;
   background-color: whitesmoke;
   border: 3px solid;
+  letter-spacing: 2.5px;
   border-radius: 10px;
   margin: auto;
   width: 45%;
