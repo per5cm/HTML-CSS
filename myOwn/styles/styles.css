@@ -12,15 +12,25 @@
   src: url(/fonts/Poppins/Poppins-BlackItalic.ttf);
 }
 
+@font-face {
+  font-family: Poppins-Bold; 
+  src: url(/fonts/Poppins/Poppins-Bold.ttf);
+}
+
 html, footer, .introduction {
   font-family: Noto Sans, sans-serif; 
   font-optical-sizing: auto;
   font-weight: 600;
 }
 
-
 html, .topNav, .btn {
   font-family: Poppins, sans-serif; /*Specify your font name here*/
+  font-optical-sizing: auto;
+  font-weight: 600;
+}
+
+h3, h2 {
+  font-family: Poppins-Bold, sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
 }
@@ -90,9 +100,15 @@ body { min-height: 100vh; }
   box-shadow: 0 0 8px 0;
 }
 
-h3 {
+h2, h3 {
   text-align: center;
   margin-top: 2%;
+}
+
+h4 {
+  text-align: center;
+  margin-top: 2%;
+  letter-spacing: 2.5px;
 }
 
 .navigation {
@@ -183,7 +199,7 @@ h3 {
 
 /* this section where Portfolio css starts */
 
-.name {
+/*.name {
   text-align: center;
   background-color: whitesmoke;
   border: 3px solid;
@@ -194,6 +210,13 @@ h3 {
   padding: 50px; 
   margin-top: 60px;
 }
+
+hr {
+  height: 10px;
+  border-color: black;
+}
+*/
+
 
 img {
   max-width:100%;
@@ -221,10 +244,6 @@ img {
   box-shadow: 0 0 5px 0;
 }
 
-.profileButtons {
-  float: left;
-}
-
 .introduction {
   text-align: center;
   border: 1px solid;
@@ -242,7 +261,8 @@ img {
 .projects {
   text-align: left;
   background-color: rgba(101, 113, 175, 0.687);
-  border: 5px solid;
+  border: 3px solid;
+  border-radius: 10px;
   margin: auto;
   width: 45%;
   padding: 45px; 
