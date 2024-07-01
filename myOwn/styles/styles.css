@@ -23,13 +23,13 @@ html, footer, .introduction {
   font-weight: 600;
 }
 
-html, .topNav, .btn {
+html, .topNav {
   font-family: Poppins, sans-serif; /*Specify your font name here*/
   font-optical-sizing: auto;
   font-weight: 600;
 }
 
-h3, h2 {
+h3, h2, .btn {
   font-family: Poppins-Bold, sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
