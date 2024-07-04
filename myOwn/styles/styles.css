@@ -17,19 +17,25 @@
   src: url(/fonts/Poppins/Poppins-Bold.ttf);
 }
 
-html, footer, .introduction {
+footer, .introduction {
   font-family: Noto Sans, sans-serif; 
   font-optical-sizing: auto;
   font-weight: 600;
 }
 
-html, .topNav {
+.topNav {
   font-family: Poppins, sans-serif; /*Specify your font name here*/
   font-optical-sizing: auto;
   font-weight: 600;
 }
 
-h3, h2, .btn {
+h3, h2 {
+  font-family: Poppins-Bold, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+}
+
+.btn {
   font-family: Poppins-Bold, sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
