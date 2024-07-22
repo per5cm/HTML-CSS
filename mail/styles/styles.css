@@ -1,3 +1,25 @@
+@font-face {
+    font-family: Poppins; 
+    src: url(/fonts/Poppins/Poppins-BlackItalic.ttf);
+  }
+  
+  @font-face {
+    font-family: Poppins-Bold; 
+    src: url(/fonts/Poppins/Poppins-Bold.ttf);
+  }
+
+.signature-name {
+    font-family: Poppins, sans-serif; /*Specify your font name here*/
+    font-optical-sizing: auto;
+    font-weight: 600;
+  }
+  
+.signature-contact, .signature-social {
+    font-family: Poppins-Bold, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+  }
+
 body {
     font-family: Arial, sans-serif;
 }
@@ -18,7 +40,7 @@ body {
 .signature-img {
     width: 80px;
     height: auto;
-    border-radius: 50%;
+    border-radius: 20%;
 }
 .signature-info {
     padding-left: 10px;
