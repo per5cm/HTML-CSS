@@ -1,31 +1,98 @@
-<!DOCTYPE html>
+<!DOC<!DOCTYPE html>
 <html lang="en">
-<head>
+<head><script type="text/javascript" src="/___vscode_livepreview_injected_script"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Email Signature</title>
     <link rel="stylesheet" href="/styles/styles.css">
+    <style>
+        @font-face {
+            font-family: Poppins; 
+            src: url('/fonts/Poppins/Poppins-BlackItalic.ttf');
+        }
+        
+        @font-face {
+            font-family: Poppins-Bold; 
+            src: url('/fonts/Poppins/Poppins-Bold.ttf');
+        }
+      
+        .signature-name {
+            font-family: 'Poppins', sans-serif; /*Specify your font name here*/
+            font-optical-sizing: auto;
+            font-weight: 600;
+        }
+        
+        .signature-contact, .signature-social {
+            font-family: 'Poppins-Bold', sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+        }
+      
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+        }
+        .signature {
+            width: 100%;
+            max-width: 600px;
+            border-top: 1px solid #e1e1e1;
+            padding-top: 10px;
+        }
+        .signature-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .signature-table td {
+            vertical-align: top;
+            padding: 5px;
+        }
+        .signature-img {
+            width: 80px;
+            height: auto;
+            border-radius: 20%;
+        }
+        .signature-info {
+            padding-left: 10px;
+        }
+        .signature-name {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .signature-title {
+            font-size: 14px;
+            color: #555555;
+        }
+        .signature-contact {
+            font-size: 14px;
+            color: #777777;
+        }
+        .signature-social img {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+    </style>
 </head>
 <body>
     <div class="signature">
         <table class="signature-table">
             <tr>
                 <td>
-                    <img src="/img/ProfilePic_no_background.png" alt="Your Name" class="signature-img">
+                    <img src="./img/ProfilePic_no_background.png" alt="Your Name" class="signature-img">
                 </td>
                 <td class="signature-info">
                     <div class="signature-name">Erikas Ralys</div>
                     <hr>
                     <div class="signature-title"></div>
                     <div class="signature-contact">
-                        <div>Email: <a href="mailto: erikas.ralys@own.cologne"><font color="green">erikas.ralys@own.cologne</font></a></div>
-                        <div>Phone: <a href="tel:+1234567890"><font color="green">+49 173 2659607</font></a></div>
+                        <div>Email: <a href="mailto:erikas.ralys@own.cologne"><font color="green">erikas.ralys@own.cologne</font></a></div>
+                        <div>Phone: <a href="tel:+491732659607"><font color="green">+49 173 2659607</font></a></div>
                         <div>Website: <a href="http://own.cologne" target="_blank" rel="noopener"><font color="green">own.cologne</font></a></div>
                     </div>
                     <hr>
                     <div class="signature-social">
                         <a href="https://github.com/per5cm" target="_blank" rel="noopener">
-                            <img src="/img/github.png" alt="GitHub">GitHub
+                            <img src="./img/github.png" alt="GitHub">GitHub
                         </a>
                     </div>
                 </td>
@@ -34,5 +101,6 @@
     </div>
 </body>
 </html>
+
 
 
