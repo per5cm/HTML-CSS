@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>per5cm — Wizard in Training</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+  <nav class="top-nav">
+    <a href="#home" class="logo blink-logo">&lt;per5cm&gt;</a>
+    <ul class="nav-links">
+      <li><a href="#roadmap">Roadmap</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#misc">Misc</a></li>
+      <li><a href="#fun" class="blink">Fun Zone</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="home" class="hero">
+      <h1>My Road to Learning to Code</h1>
+      <p>Your a <span class="blink">Wizard Harry!</span> © per5cm</p>
+    </section>
+
+    <section id="roadmap">
+      <h2>Roadmap</h2>
+      <p>I'm currently working on my page and facing a few challenges:</p>
+      <ul>
+        <li>Mobile First Design: I struggled — should have started with design and mobile queries first.</li>
+        <li>Design Decisions: Thinking about ditching Bootstrap, complete redesign incoming.</li>
+      </ul>
+    </section>
+
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <div class="profile">
+        <img src="img/ProfilePic_no_background.png" alt="Profile picture" class="profile-pic">
+        <div class="profile-info">
+          <h3>Erikas Ralys</h3>
+          <p>Trainee software developer who fell in love with building cool things with code.</p>
+          <div class="profile-buttons">
+            <a href="https://github.com/per5cm" target="_blank" class="btn">GitHub</a>
+            <a href="mailto:erik.ralys@per5cm.de" class="btn">Email me</a>
+          </div>
+        </div>
+      </div>
+      <div class="projects">
+        <h3>Latest Projects</h3>
+        <p>This homepage is my first real project — will add updates and new design soon.</p>
+        <p>Currently working with HTML, CSS. Next up: JavaScript and Java.</p>
+      </div>
+    </section>
+
+    <section id="misc">
+      <h2>Miscellaneous</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Free Code Camp</h3>
+          <p>Non-profit interactive learning platform.</p>
+          <a href="https://www.freecodecamp.org/learn/" target="_blank" class="btn">Go there</a>
+        </div>
+        <div class="card">
+          <h3>W3Schools</h3>
+          <p>Web dev tutorials: HTML, CSS, JS, etc.</p>
+          <a href="https://www.w3schools.com/" target="_blank" class="btn">Go there</a>
+        </div>
+        <div class="card">
+          <h3>Daily Dev</h3>
+          <p>Personalized dev news feed & community.</p>
+          <a href="https://daily.dev/" target="_blank" class="btn">Go there</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="fun">
+      <h2>Fun Zone</h2>
+      <div class="poop-container">
+        <img src="img/poop_emoji.png" alt="Happy poop" class="poop-emoji">
+        <p>Ooops something went wrong... or did it? 😏</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Random <span class="blink">blinking</span> text here</p>
+    <p>© per5cm — still training to be a wizard</p>
+  </footer>
+</body>
+
+JavaScript// script.js
+const blinkSpans = document.querySelectorAll('.blink-random');
+blinkSpans.forEach(span => {
+    setInterval(() => {
+        span.style.opacity = Math.random() > 0.5 ? '1' : '0.3';
+  }, Math.random() * 2000 + 500);
+});
+</html>
