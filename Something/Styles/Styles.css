@@ -147,6 +147,8 @@ th {
 }
 
 .comment-list {
+        display: flex;
+        flex-direction: column;
         flex: 1;                    /* takes most space on the left */
         background: #f9f9f9;
         padding: 1.5rem;

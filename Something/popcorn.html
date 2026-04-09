@@ -100,13 +100,13 @@
 
       <div class="comment-form">
         <form id="comment-form" action="#" method="post">
-          <label for="name">Dein Name:</label>
+          <label for="name">Name:</label>
           <input type="text" id="name" name="name" required><br>
 
-          <label for="comment">Dein Kommentar:</label><br>
+          <label for="comment">Kommentar:</label><br>
           <textarea id="comment" name="comment" rows="5" required></textarea><br>
 
-          <button type="submit">Kommentar abschicken</button>
+          <button id="submit" type="submit">Kommentar abschicken</button>
         </form>
       </div>
       </div>
@@ -153,47 +153,27 @@
     </script>
     <!-- Chart.js ENDE -->
 
-    <script>
-    // Simple in-memory comments (will reset on refresh)
-    let comments = [];
+<script>
+    // Step 1: Add an event listener to the "Post" button
+    document.getElementById("submit").addEventListener("click", function () {
+    // This line sets up an event listener for the click event on the "Post" button.
+    // When the button is clicked, the function provided as the second argument will run.
 
-    const form = document.getElementById('comment-form');
-    const commentsList = document.getElementById('comment-list');
+    // Step 2: Get the comment from the textarea
+    const name = document.getElementById("name").value.trim();
+    const comment = document.getElementById("comment").value.trim();
 
-    form.addEventListener('submit', function(e) {
-        e.preventDefault();
+    // Step 3: Create a new paragraph element for the comment
+    const commentContainer = document.getElementById("comment-list");
+    const commentElement = document.createElement("li");
+    commentElement.innerText = `${name}: ${comment}`;
 
-        const name = document.getElementById('name').value.trim();
-        const commentText = document.getElementById('comment').value.trim();
+    // Step 4: Append the comment to the comment container
+    commentContainer.appendChild(commentElement);
 
-        if (name && commentText) {
-            comments.unshift({ name, text: commentText, time: new Date().toLocaleTimeString('de-DE') });
-
-            renderComments();
-
-            form.reset();
-        }
+    // Clear the textarea after posting the comment
+    document.getElementById("comment").value.trim() = "";
     });
-
-    function renderComments() {
-        commentsList.innerHTML = '';
-        
-        comments.forEach(comment => {
-            const li = document.createElement('li');
-            li.innerHTML = `
-                <strong>${comment.name}</strong> 
-                <small style="color:#666; float:right;">${comment.time}</small>
-                <p style="margin: 8px 0 0;">${comment.text}</p>
-            `;
-            commentsList.appendChild(li);
-        });
-
-        // Show message if no comments yet
-        if (comments.length === 0) {
-            commentsList.innerHTML = '<li style="color:#888; font-style:italic;">Noch keine Kommentare. Sei der Erste!</li>';
-        }
-    }
-    renderComments();
 </script>
 
   </body>

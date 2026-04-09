@@ -1,75 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" 
-          content="width=device-width,initial-scale=1.0">
-    <title>Responsive Form Card</title>
-    <link rel="stylesheet" href=
-"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add new comment</title>
 </head>
-
 <body>
-    <h1>GeeksforGeeks</h1>
-    <h3>Feedback Form using
-        HTML and CSS
-    </h3>
-    <div class="form-box">
-        <div class="textup">
-            <i class="fa fa-solid fa-clock"></i>
-            It only takes two minutes!!
-        </div>
-        <form>
-            <label for="uname">
-                <i class="fa fa-solid fa-user"></i>
-                Name
-            </label>
-            <input type="text" id="uname" 
-                   name="uname" required>
-
-            <label for="email">
-                <i class="fa fa-solid fa-envelope"></i>
-                Email Address
-            </label>
-            <input type="email" id="email" 
-                   name="email" required>
-
-            <label for="phone">
-                <i class="fa-solid fa-phone"></i>
-                Phone No
-            </label>
-            <input type="tel" id="phone" 
-                   name="phone" required>
-
-            <label>
-                <i class="fa-solid fa-face-smile"></i>
-                Do you satisfy with our service?
-            </label>
-            <div class="radio-group">
-                <input type="radio" id="yes" 
-                       name="satisfy" value="yes" checked>
-                <label for="yes">Yes</label>
-
-                <input type="radio" id="no" 
-                       name="satisfy" value="no">
-                <label for="no">No</label>
-            </div>
-
-            <label for="msg">
-                <i class="fa-solid fa-comments" 
-                   style="margin-right: 3px;"></i>
-                Write your Suggestions:
-            </label>
-            <textarea id="msg" name="msg" 
-                      rows="4" cols="10" required>
-            </textarea>
-            <button type="submit">
-                Submit
-            </button>
-        </form>
+    <h1>Please add your comment</h1>
+    <div id="comment-container">
+        <!-- Existing comments will go here -->
     </div>
-</body>
+    <textarea name="" id="new-comment" cols="60" rows="5"></textarea>
+    <br>
+    <button id="btn-post">Post</button>
+    <script>
+        // Step 1: Add an event listener to the "Post" button
+        document.getElementById("btn-post").addEventListener("click", function () {
+            // This line sets up an event listener for the click event on the "Post" button.
+            // When the button is clicked, the function provided as the second argument will run.
 
+            // Step 2: Get the comment from the textarea
+            const newComment = document.getElementById("new-comment").value;
+
+            // Step 3: Create a new paragraph element for the comment
+            const commentContainer = document.getElementById("comment-container");
+            const commentElement = document.createElement("p");
+            commentElement.innerText = newComment;
+
+            // Step 4: Append the comment to the comment container
+            commentContainer.appendChild(commentElement);
+
+            // Clear the textarea after posting the comment
+            document.getElementById("new-comment").value = "";
+        });
+    </script>
+</body>
 </html>
