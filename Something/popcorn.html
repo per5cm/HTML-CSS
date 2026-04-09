@@ -155,7 +155,9 @@
 
 <script>
     // Step 1: Add an event listener to the "Post" button
-    document.getElementById("submit").addEventListener("click", function () {
+    document.getElementById("submit").addEventListener("click", function (e) {
+        e.preventDefault(); // Prevent the default form submission
+
     // This line sets up an event listener for the click event on the "Post" button.
     // When the button is clicked, the function provided as the second argument will run.
 
