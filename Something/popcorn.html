@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+  <head>
+    <!--  Sorgt dafür, dass Umlaute im Deutschen richtig angezeigt werden!  -->
+    <meta charset="UTF-8" />
+    <title>Meine erste HTML-Seite</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+  </head>
+  <body>
+    <!-- Das hier wäre ein guter Platz für ein Bild! -->
+    <img src="./Images/Image20260409093722.jpg" />
+
+    <h1>Popcorn</h1>
+    <p class="tolle-klasse">
+      Popcorn, ein beliebter Snack weltweit, spaltet die Gemüter in zwei Lager:
+      die Liebhaber von süßem und die von salzigem Popcorn. Beide Varianten
+      haben ihren eigenen Reiz und werden oft von bestimmten Vorlieben und
+      Anlässen bestimmt.
+    </p>
+
+    <p>
+      Süßes Popcorn, oft karamellisiert, erinnert an Jahrmarktbesuche und
+      verleiht jedem Filmabend eine festliche Note. Der knusprige, süße Überzug
+      ergänzt das leichte, luftige Korn perfekt und macht es zu einem
+      unwiderstehlichen Genuss für diejenigen mit einer Vorliebe für Süßes. Es
+      bietet eine angenehme Balance zwischen dem knackigen Popcorn und dem süßen
+      Geschmack, der in jedem Bissen ein kleines Glücksgefühl hervorruft.
+    </p>
+
+    <p>
+      Auf der anderen Seite steht das salzige Popcorn, ein Klassiker in
+      Kinosälen und ein Muss für viele Cineasten. Der salzige Geschmack hebt die
+      natürliche Maisnote hervor und sorgt für ein einfaches, aber
+      zufriedenstellendes Erlebnis. Salziges Popcorn ist zudem oft die
+      bevorzugte Wahl für diejenigen, die auf ihre Kalorienzufuhr achten, da es
+      in der Regel weniger Zucker und Fett enthält als seine süße Variante.
+    </p>
+
+    <p>
+      Die Wahl zwischen süßem und salzigem Popcorn kann auch kulturell
+      beeinflusst sein. In einigen Ländern, wie den USA, ist süßes Popcorn weit
+      verbreitet, während in anderen, wie Deutschland, salziges Popcorn
+      traditionell bevorzugt wird. Diese Vorlieben spiegeln sich oft in den
+      Angeboten der Kinos und Supermärkte wider.
+    </p>
+
+    <p>
+      Letztendlich gibt es keine richtige oder falsche Wahl. Beide Varianten
+      haben ihren Platz in der Welt der Snacks und bieten unterschiedliche, aber
+      gleichermaßen befriedigende Geschmackserlebnisse. Vielleicht ist die beste
+      Lösung, das Beste aus beiden Welten zu genießen und je nach Stimmung und
+      Anlass zwischen süßem und salzigem Popcorn zu wechseln.
+    </p>
+
+    <!--  Wir wollen eine Tabelle mit konkreten Daten zu den Popcorn-Vorlieben der Menschen erstellen!  -->
+
+    <table border="1">
+      <tr>
+        <th>Vorliebe</th>
+        <th>Prozentsatz der Menschen</th>
+      </tr>
+      <tr>
+        <td>Salzig</td>
+        <td>45%</td>
+      </tr>
+      <tr>
+        <td>Süß</td>
+        <td>55%</td>
+      </tr>
+    </table>
+
+    <!--  Man könnte zu diesen Daten auch eine tolle Illustration mit Chart.js machen!  -->
+
+    <!-- Chart.js ANFANG -->
+    <div style="width: 50%; position: relative">
+      <canvas id="popcornChart"></canvas>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+      const ctx = document.getElementById("popcornChart");
+
+      new Chart(ctx, {
+        type: "pie",
+        data: {
+          labels: ["Salzig", "Süß"],
+          datasets: [
+            {
+              label: "% der Menschheit",
+              data: [45, 55],
+              borderWidth: 1,
+            },
+          ],
+        },
+      });
+    </script>
+
+    <div style="width: 50%; position: relative">
+      <canvas id="myChart"></canvas>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.5.0/chart.min.js"></script>
+
+    <script>
+      const ctx2 = document.getElementById('myChart');
+
+      new Chart(ctx2, {
+        type: 'bar',
+        data: {
+          labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+          datasets: [{
+            label: '# of Votes',
+            data: [12, 19, 3, 5, 2, 3],
+            borderWidth: 1
+          }]
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true
+            }
+          }
+        }
+      });
+    </script>
+
+    <!-- Die Leute sollen an der Diskussion teilhaben und Kommentare hinterlassen können! Ihre Kommentare werden als Liste dargestellt. -->
+
+    <!-- Chart.js ENDE -->
+  </body>
+</html>

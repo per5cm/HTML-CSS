@@ -1,0 +1,41 @@
+@media (max-width: 600px) {
+        body {
+        padding: 20px 15px;
+        }
+        h1 {
+        font-size: 2.4rem;
+        }
+}
+
+canvas {
+        width: 100% !important;
+        height: auto !important;
+}
+
+.tolle-klasse {
+        background-color: lightblue;
+        color: darkblue;
+        font-size: 20px;
+        padding: 10px;
+}
+
+table, th, tr, td {
+        border-collapse: collapse;
+        /* width: 100%; */
+        max-width: 400px;
+        margin: 40px auto;
+        background: #f2f2f2;
+        border-radius: 10px;
+        border: 1px solid black;      
+}
+
+th, td {
+        padding: 10px;
+        text-align: center;
+}
+
+/* .ctx {
+        width: 50%;
+        position: relative;
+} */
+

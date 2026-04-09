@@ -249,7 +249,7 @@ img {
 }
 
 .profilePic:hover {
-  content: url(/img/poop\ emoji.png);
+  content: url(../img/poop\ emoji.png);
   height: 175px;
   width: 175px;
 }
