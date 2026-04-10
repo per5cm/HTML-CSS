@@ -60,32 +60,37 @@
 
     <!--  Wir wollen eine Tabelle mit konkreten Daten zu den Popcorn-Vorlieben der Menschen erstellen!  -->
 
-  <section class="stats">
-    <h2>Popcorn-Vorlieben der Menschen</h2>  
+  <section class="stats">   
+    <h2>Popcorn-Vorlieben der Menschen</h2> 
+    
+    <div class="stats-layout">
+      <table class="data">
+        <thead>
+          <tr>
+            <th>Vorliebe</th>
+            <th>Prozentsatz der Menschen</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Salzig</td>
+            <td>45%</td>
+          </tr>
+          <tr>
+            <td>Süß</td>
+            <td>55%</td>
+          </tr>
+        </tbody>
+      </table>
 
-    <table class="data">
-      <thread>
-        <tr>
-          <th>Vorliebe</th>
-          <th>Prozentsatz der Menschen</th>
-        </tr>
-      </thread>
-      <tbody>
-        <tr>
-          <td>Salzig</td>
-          <td>45%</td>
-        </tr>
-        <tr>
-          <td>Süß</td>
-          <td>55%</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <div class="chart-container" style="width: 50%; position: relative">
-      <canvas id="popcornChart"></canvas>
+      <!-- Chart -->
+      <div class="chart-container">
+        <canvas id="popcornChart"></canvas>
+      </div>
     </div>
   </section>
+
+  
 
     <!-- Die Leute sollen an der Diskussion teilhaben und Kommentare hinterlassen können! Ihre Kommentare werden als Liste dargestellt. -->
 
@@ -144,7 +149,7 @@
               position: "bottom",
             },
             title: {
-              display: true,
+              display: false,
               text: "Popcorn-Vorlieben der Menschen",
             },
           },
